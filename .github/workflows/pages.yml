@@ -26,7 +26,7 @@ jobs:
 
       # enablement: true —— 仓库还没开 Pages 时，自动用本 workflow 的 token 开启
       - name: Configure Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
         with:
           enablement: true
 
