@@ -22,7 +22,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       # enablement: true —— 仓库还没开 Pages 时，自动用本 workflow 的 token 开启
       - name: Configure Pages
