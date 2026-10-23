@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='7' fill='%23ff3b3b'/%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23a855f7' stroke-width='1.5' opacity='.6'/%3E%3C/svg%3E" />
+<title>NEBULA · 1024 数据星云观测台</title>
+  <script type="module" crossorigin src="./assets/index-D2N9oohD.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CLdTNtua.css">
+</head>
+<body>
+  <div id="stage"></div>
+
+  <!-- 顶部 HUD -->
+  <header id="topbar">
+    <div class="tb-left">
+      <span class="logo">NEBULA</span>
+      <span class="sep"></span>
+      <span class="src" id="srcLabel">FORUM.TRAE.CN</span>
+    </div>
+    <div class="tb-mid" id="tbTitle">1024 BUILDER 生态星云</div>
+    <div class="tb-right">
+      <span class="metric"><i>WORKS</i><b id="mWorks">—</b></span>
+      <span class="metric"><i>FLOORS</i><b id="mFloors">—</b></span>
+      <span class="metric"><i>BUILDERS</i><b id="mBuilders">—</b></span>
+      <span class="metric"><i>EDGES</i><b id="mEdges">—</b></span>
+      <span class="metric live"><i>CRAWL</i><b id="mCrawl">—</b></span>
+    </div>
+  </header>
+
+  <!-- 左侧量化终端 -->
+  <aside id="hud-left">
+    <section class="mod" id="mod-chief">
+      <h3>CHIEF <span>主控</span></h3>
+      <div class="chief-body">
+        <div class="chief-line" id="chiefLine">观测台启动中…</div>
+        <div class="chief-meta"><span id="chiefSub">waiting for crawl</span></div>
+      </div>
+    </section>
+
+    <section class="mod" id="mod-crawler">
+      <h3>CRAWLER <span>爬虫</span></h3>
+      <div class="crawler-stream" id="crawlerStream"></div>
+    </section>
+
+    <section class="mod" id="mod-kline">
+      <h3>HEATMAP <span>24H 热度</span></h3>
+      <div class="kline" id="kline"></div>
+    </section>
+  </aside>
+
+  <!-- 右侧量化终端 -->
+  <aside id="hud-right">
+    <section class="mod">
+      <h3>SIZE <span>作品类型</span></h3>
+      <div class="bars" id="catBars"></div>
+    </section>
+
+    <section class="mod">
+      <h3>FILL <span>产出密度</span></h3>
+      <div class="fill-grid" id="fillGrid"></div>
+    </section>
+
+    <section class="mod">
+      <h3>RISK <span>质量体检</span></h3>
+      <div class="risk" id="riskList"></div>
+    </section>
+
+    <section class="mod">
+      <h3>SOCIAL <span>协作热区</span></h3>
+      <div class="social" id="socialList"></div>
+    </section>
+  </aside>
+
+  <!-- 底部检视条 -->
+  <footer id="inspector">
+    <div class="insp-cell"><i>VIEW</i><b id="iView">—</b></div>
+    <div class="insp-cell"><i>SELECT</i><b id="iSel">点击星点检视</b></div>
+    <div class="insp-cell"><i>COORD</i><b id="iCoord">—</b></div>
+    <div class="insp-cell"><i>FPS</i><b id="iFps">—</b></div>
+    <div class="insp-cell hint">WASD 飞行 · 滚轮缩放 · 点击星点查看详情</div>
+  </footer>
+
+  <!-- 详情抽屉 -->
+  <div id="drawer" class="closed">
+    <button id="drawerClose">×</button>
+    <div id="drawerBody"></div>
+  </div>
+
+</body>
+</html>

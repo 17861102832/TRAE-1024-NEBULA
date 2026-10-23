@@ -1,0 +1,14 @@
+{
+ "source": "https://forum.trae.cn",
+ "tag": "109",
+ "crawledAt": "2026-10-23T11:02:27.694Z",
+ "elapsedMs": 3541,
+ "requests": 43,
+ "bytes": 2776635,
+ "counts": {
+  "works": 30,
+  "floors": 593,
+  "participants": 368,
+  "replies": 123
+ }
+}
